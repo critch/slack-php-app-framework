@@ -11,11 +11,11 @@
   <a href="http://php.net/">
     <img src="https://img.shields.io/badge/code-php%207.4-8892bf.svg" alt="Coded in PHP 7.4">
   </a>
-  <a href="https://packagist.org/packages/slack-php/slack-block-kit">
-    <img src="https://img.shields.io/packagist/v/slack-php/slack-app-framework.svg" alt="Packagist Version">
+  <a href="https://packagist.org/packages/critch/slack-block-kit">
+    <img src="https://img.shields.io/packagist/v/critch/slack-app-framework.svg" alt="Packagist Version">
   </a>
-  <a href="https://actions-badge.atrox.dev/slack-php/slack-php-app-framework/goto?ref=main">
-    <img alt="Build Status" src="https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Fslack-php%2Fslack-php-app-framework%2Fbadge%3Fref%3Dmain&style=flat" />
+  <a href="https://actions-badge.atrox.dev/critch/slack-php-app-framework/goto?ref=main">
+    <img alt="Build Status" src="https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Fcritch%2Fslack-php-app-framework%2Fbadge%3Fref%3Dmain&style=flat" />
   </a>
 </p>
 
@@ -32,7 +32,7 @@ building Slack applications.
 ## Installation
 
 - Requires PHP 7.4+
-- Use Composer to install: `composer require slack-php/slack-app-framework`
+- Use Composer to install: `composer require critch/slack-app-framework`
 
 ## General Usage
 
@@ -302,7 +302,7 @@ $ctx->container(): ContainerInterface // Returns an instance of the configured P
 
 ## Socket Mode
 
-[Socket mode][] support is provided by a separate package. See [slack-php/slack-php-socket-mode][].
+[Socket mode][] support is provided by a separate package. See [critch/slack-php-socket-mode][].
 
 ## Not Implemented
 
@@ -319,8 +319,8 @@ The following features are known to be missing:
 - PSR-7, PSR-15, PSR-17: HTTP
 - PSR-11: Container Interface
 
-[Discussions]: https://github.com/slack-php/slack-php-app-framework/discussions
-[Issues]: https://github.com/slack-php/slack-php-app-framework/issues
-[Pull Request]: https://github.com/slack-php/slack-php-app-framework/pulls
+[Discussions]: https://github.com/critch/slack-php-app-framework/discussions
+[Issues]: https://github.com/critch/slack-php-app-framework/issues
+[Pull Request]: https://github.com/critch/slack-php-app-framework/pulls
 [Socket Mode]: https://api.slack.com/apis/connections/socket
-[slack-php/slack-php-socket-mode]: https://github.com/slack-php/slack-php-socket-mode
+[critch/slack-php-socket-mode]: https://github.com/critch/slack-php-socket-mode

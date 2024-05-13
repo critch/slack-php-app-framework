@@ -474,7 +474,7 @@ class Context implements ArrayAccess, JsonSerializable
         return $this->data[$offset] ?? null;
     }
 
-    public function offsetSet($offset, $value)
+    public function offsetSet(mixed $offset, mixed $value): void
     {
         $this->set($offset, $value);
     }

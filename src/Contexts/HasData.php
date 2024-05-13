@@ -142,7 +142,7 @@ trait HasData
         return $this->data;
     }
 
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return $this->toArray();
     }

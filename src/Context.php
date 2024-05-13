@@ -469,7 +469,7 @@ class Context implements ArrayAccess, JsonSerializable
         return isset($this->data[$offset]);
     }
 
-    public function offsetGet($offset)
+    public function offsetGet($offset): mixed
     {
         return $this->data[$offset] ?? null;
     }
@@ -479,7 +479,7 @@ class Context implements ArrayAccess, JsonSerializable
         $this->set($offset, $value);
     }
 
-    public function offsetUnset($offset)
+    public function offsetUnset($offset): void
     {
         $this->set($offset, null);
     }

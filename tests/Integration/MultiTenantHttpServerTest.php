@@ -18,7 +18,7 @@ class MultiTenantHttpServerTest extends TestCase
     {
         parent::setUp();
         putenv('SLACKPHP_SKIP_AUTH=1');
-        $this->request = new ServerRequest('POST', '/', ['Content-Type' => 'application/json'], '{}');
+        $this->request = new ServerRequest('POST', '/', ['Content-Type' => 'application/json; charset=utf-8'], '{}');
         $this->responseEmitter = new FakeResponseEmitter();
         $this->server = MultiTenantHttpServer::new()
             ->registerApp('A1', Apps\AnyApp::class)

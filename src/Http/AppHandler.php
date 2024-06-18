@@ -51,7 +51,7 @@ class AppHandler implements HandlerInterface
         }
 
         return new Response(200, [
-            'Content-Type' => 'application/json',
+            'Content-Type' => 'application/json; charset=utf-8',
             'Content-Length' => strlen($ack),
         ], $ack);
     }

@@ -74,7 +74,7 @@ class IntegTestCase extends TestCase
 
     protected function createEventRequest(array $data, ?int $timestamp = null): ServerRequestInterface
     {
-        return $this->createRequest(json_encode($data), 'application/json', $timestamp);
+        return $this->createRequest(json_encode($data), 'application/json; charset=utf-8', $timestamp);
     }
 
     private function createRequest(string $content, string $contentType, ?int $timestamp = null): ServerRequestInterface
